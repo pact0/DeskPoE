@@ -49,9 +49,10 @@
 **/build/**/*
 
 **/include/**/*
-**/lib/**/*
+/lib/*
 **/bin/**/*
 
 ## Do not ignore
 
 !**/.git-keep
+!lib/Qt6
