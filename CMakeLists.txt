@@ -1,20 +1,46 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.5)
 
-project(cmake-project-template)
+project(DeskPoe)
 
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
+set(INSTALL_LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
+set(EXTERNALS_DIR ${PROJECT_SOURCE_DIR}/externals)
+set(ROOT_SRC_DIR ${PROJECT_SOURCE_DIR}/src)
 
-set(DIVISIBLE_INSTALL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
-set(DIVISIBLE_INSTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
-set(DIVISIBLE_INSTALL_LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
+set(QT_VERSION 6)
+set(CMAKE_PREFIX_PATH "${INSTALL_LIB_DIR}/Qt6/lib/cmake")
 
-set(DIVISION_HEADERS_DIR ${PROJECT_SOURCE_DIR}/src/division)
 
-include_directories(${DIVISIBLE_INSTALL_INCLUDE_DIR})
-include_directories(${DIVISION_HEADERS_DIR})
+include_directories(${INSTALL_LIB_DIR})
+
+add_subdirectory(${INSTALL_LIB_DIR}/googletest)
+
+add_subdirectory(${INSTALL_LIB_DIR}/BoostConfig)
+add_subdirectory(${INSTALL_LIB_DIR}/BoostAssert)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostDateTime)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostException)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostSpirit)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostArray)
+add_subdirectory(${INSTALL_LIB_DIR}/BoostStaticAssert)
+add_subdirectory(${INSTALL_LIB_DIR}/BoostCore)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostEndian)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostFunction)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostBind)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostFunctionTypes)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostPreprocessor)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostFusion)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostAlgorithm)
+add_subdirectory(${INSTALL_LIB_DIR}/BoostThrowException)
+#add_subdirectory(${INSTALL_LIB_DIR}/BoostSmartPtr)
+
+add_subdirectory(${INSTALL_LIB_DIR}/SpdLog)
+
+
+include_directories(${INSTALL_LIB_DIR}/SpdLog/include)
+
 
 add_subdirectory(src)
 add_subdirectory(test)

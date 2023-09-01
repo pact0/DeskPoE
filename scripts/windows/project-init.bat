@@ -47,7 +47,7 @@ if not exist "%QT_REPO_DIR%\*" (
 
 cd %QT_REPO_DIR%
 
-perl init-repository --module-subset=qtbase
+perl init-repository --module-subset=qtbase,qtnetworkauth
 if errorlevel 1 (
     echo "Error: Failed to initialize the repository."
     exit /b 1
