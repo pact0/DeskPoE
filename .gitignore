@@ -48,8 +48,10 @@
 
 **/build/**/*
 
+externals/**/
 **/include/**/*
 /lib/*
+/lib/Qt6/*
 **/bin/**/*
 
 ## Do not ignore

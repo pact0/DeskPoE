@@ -1,8 +1,0 @@
-[submodule "test/lib/googletest"]
-	path = test/lib/googletest
-	url = https://github.com/google/googletest.git
-	branch = main
-[submodule "lib/Qt6"]
-	path = lib/Qt6
-	url = https://github.com/qt/qt5.git
-	branch = 6.5.2
