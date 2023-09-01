@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    spdlog::info("Welcome to spdlog!");
+    spdlog::info("Witam w spdlogu!");
     std::cout<<boost::addressof(app)<<std::endl;
     QMainWindow mainWindow;
     mainWindow.setWindowTitle("Moje Okno");
