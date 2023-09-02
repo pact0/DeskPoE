@@ -2,63 +2,9 @@
 	path = lib/googletest
 	url = git@github.com:google/googletest.git
 	branch = v1.14.x
-[submodule "lib/BoostSpirit"]
-	path = lib/BoostSpirit
-	url = git@github.com:boostorg/spirit.git
-[submodule "lib/BoostDateTime"]
-	path = lib/BoostDateTime
-	url = git@github.com:boostorg/date_time.git
-[submodule "lib/BoostCore"]
-	path = lib/BoostCore
-	url = git@github.com:boostorg/core.git
-[submodule "lib/BoostConfig"]
-	path = lib/BoostConfig
-	url = git@github.com:boostorg/config.git
-[submodule "lib/BoostException"]
-	path = lib/BoostException
-	url = git@github.com:boostorg/exception.git
-[submodule "lib/BoostAssert"]
-	path = lib/BoostAssert
-	url = git@github.com:boostorg/assert.git
-[submodule "lib/BoostStaticAssert"]
-	path = lib/BoostStaticAssert
-	url = git@github.com:boostorg/static_assert.git
-[submodule "lib/BoostSmartPtr"]
-	path = lib/BoostSmartPtr
-	url = git@github.com:boostorg/smart_ptr.git
-[submodule "lib/BoostThrowException"]
-	path = lib/BoostThrowException
-	url = git@github.com:boostorg/throw_exception.git
-[submodule "lib/BoostAlgorithm"]
-	path = lib/BoostAlgorithm
-	url = git@github.com:boostorg/algorithm.git
-[submodule "lib/BoostArray"]
-	path = lib/BoostArray
-	url = git@github.com:boostorg/array.git
-[submodule "lib/BoostEndian"]
-	path = lib/BoostEndian
-	url = git@github.com:boostorg/endian.git
-[submodule "lib/BoostFunction"]
-	path = lib/BoostFunction
-	url = git@github.com:boostorg/function.git
-[submodule "lib/BoostFunctionTypes"]
-	path = lib/BoostFunctionTypes
-	url = git@github.com:boostorg/function_types.git
-[submodule "lib/BoostBind"]
-	path = lib/BoostBind
-	url = git@github.com:boostorg/bind.git
-[submodule "lib/BoostFusion"]
-	path = lib/BoostFusion
-	url = git@github.com:boostorg/fusion.git
-[submodule "lib/BoostPreprocessor"]
-	path = lib/BoostPreprocessor
-	url = git@github.com:boostorg/preprocessor.git
 [submodule "lib/SpdLog"]
 	path = lib/SpdLog
 	url = git@github.com:gabime/spdlog.git
-[submodule "lib/BoostModule/BoostIo"]
-	path = lib/BoostModule/BoostIo
-	url = https://github.com/boostorg/io.git
 [submodule "lib/BoostModules/BoostMove"]
 	path = lib/BoostModules/BoostMove
 	url = https://github.com/boostorg/move.git
