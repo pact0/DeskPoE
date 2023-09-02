@@ -56,3 +56,177 @@
 [submodule "lib/SpdLog"]
 	path = lib/SpdLog
 	url = git@github.com:gabime/spdlog.git
+[submodule "lib/BoostModule/BoostIo"]
+	path = lib/BoostModule/BoostIo
+	url = https://github.com/boostorg/io.git
+[submodule "lib/BoostModules/BoostMove"]
+	path = lib/BoostModules/BoostMove
+	url = https://github.com/boostorg/move.git
+[submodule "lib/BoostModules/BoostIo"]
+	path = lib/BoostModules/BoostIo
+	url = https://github.com/boostorg/io.git
+[submodule "lib/BoostModules/BoostConceptCheck"]
+	path = lib/BoostModules/BoostConceptCheck
+	url = https://github.com/boostorg/concept_check.git
+[submodule "lib/BoostModules/BoostTypeTraits"]
+	path = lib/BoostModules/BoostTypeTraits
+	url = https://github.com/boostorg/type_traits.git
+[submodule "lib/BoostModules/BoostTuple"]
+	path = lib/BoostModules/BoostTuple
+	url = https://github.com/boostorg/tuple.git
+[submodule "lib/BoostModules/BoostLexicalCast"]
+	path = lib/BoostModules/BoostLexicalCast
+	url = https://github.com/boostorg/lexical_cast.git
+[submodule "lib/BoostModules/BoostTypeof"]
+	path = lib/BoostModules/BoostTypeof
+	url = https://github.com/boostorg/typeof.git
+[submodule "lib/BoostModules/BoostIterator"]
+	path = lib/BoostModules/BoostIterator
+	url = https://github.com/boostorg/iterator.git
+[submodule "lib/BoostModules/BoostNumericConversion"]
+	path = lib/BoostModules/BoostNumericConversion
+	url = https://github.com/boostorg/numeric_conversion.git
+[submodule "lib/BoostModules/BoostContainer"]
+	path = lib/BoostModules/BoostContainer
+	url = https://github.com/boostorg/container.git
+[submodule "lib/BoostModules/BoostIntrusive"]
+	path = lib/BoostModules/BoostIntrusive
+	url = https://github.com/boostorg/intrusive.git
+[submodule "lib/BoostModules/BoostConversion"]
+	path = lib/BoostModules/BoostConversion
+	url = https://github.com/boostorg/conversion.git
+[submodule "lib/BoostModules/BoostInteger"]
+	path = lib/BoostModules/BoostInteger
+	url = https://github.com/boostorg/integer.git
+[submodule "lib/BoostModules/BoostRange"]
+	path = lib/BoostModules/BoostRange
+	url = https://github.com/boostorg/range.git
+[submodule "lib/BoostModules/BoostDetail"]
+	path = lib/BoostModules/BoostDetail
+	url = https://github.com/boostorg/detail.git
+[submodule "lib/BoostModules/BoostMpl"]
+	path = lib/BoostModules/BoostMpl
+	url = https://github.com/boostorg/mpl.git
+[submodule "lib/BoostModules/BoostContainerHash"]
+	path = lib/BoostModules/BoostContainerHash
+	url = https://github.com/boostorg/container_hash.git
+[submodule "lib/BoostModules/BoostRegex"]
+	path = lib/BoostModules/BoostRegex
+	url = https://github.com/boostorg/regex.git
+[submodule "lib/BoostModules/BoostUtility"]
+	path = lib/BoostModules/BoostUtility
+	url = https://github.com/boostorg/utility.git
+[submodule "lib/BoostModules/BoostTokenizer"]
+	path = lib/BoostModules/BoostTokenizer
+	url = https://github.com/boostorg/tokenizer.git
+[submodule "lib/BoostModules/BoostOptional"]
+	path = lib/BoostModules/BoostOptional
+	url = https://github.com/boostorg/optional.git
+[submodule "lib/BoostModules/BoostPredef"]
+	path = lib/BoostModules/BoostPredef
+	url = https://github.com/boostorg/predef.git
+[submodule "lib/BoostModules/BoostDescribe"]
+	path = lib/BoostModules/BoostDescribe
+	url = https://github.com/boostorg/describe.git
+[submodule "lib/BoostModules/BoostWinapi"]
+	path = lib/BoostModules/BoostWinapi
+	url = https://github.com/boostorg/winapi.git
+[submodule "lib/BoostModules/BoostFunctional"]
+	path = lib/BoostModules/BoostFunctional
+	url = https://github.com/boostorg/functional.git
+[submodule "lib/BoostModules/BoostUnordered"]
+	path = lib/BoostModules/BoostUnordered
+	url = https://github.com/boostorg/unordered.git
+[submodule "lib/BoostModules/BoostMp11"]
+	path = lib/BoostModules/BoostMp11
+	url = https://github.com/boostorg/mp11.git
+[submodule "lib/BoostModules/BoostPhoenix"]
+	path = lib/BoostModules/BoostPhoenix
+	url = https://github.com/boostorg/phoenix.git
+[submodule "lib/BoostModules/BoostProto"]
+	path = lib/BoostModules/BoostProto
+	url = https://github.com/boostorg/proto.git
+[submodule "lib/BoostModules/BoostPool"]
+	path = lib/BoostModules/BoostPool
+	url = https://github.com/boostorg/pool.git
+[submodule "lib/BoostModules/BoostThread"]
+	path = lib/BoostModules/BoostThread
+	url = https://github.com/boostorg/thread.git
+[submodule "lib/BoostModules/BoostAtomic"]
+	path = lib/BoostModules/BoostAtomic
+	url = https://github.com/boostorg/atomic.git
+[submodule "lib/BoostModules/BoostAlign"]
+	path = lib/BoostModules/BoostAlign
+	url = https://github.com/boostorg/align.git
+[submodule "lib/BoostModules/BoostChrono"]
+	path = lib/BoostModules/BoostChrono
+	url = https://github.com/boostorg/chrono.git
+[submodule "lib/BoostModules/BoostRatio"]
+	path = lib/BoostModules/BoostRatio
+	url = https://github.com/boostorg/ratio.git
+[submodule "lib/BoostModules/BoostSystem"]
+	path = lib/BoostModules/BoostSystem
+	url = https://github.com/boostorg/system.git
+[submodule "lib/BoostModules/BoostRational"]
+	path = lib/BoostModules/BoostRational
+	url = https://github.com/boostorg/rational.git
+[submodule "lib/BoostModules/BoostVariant2"]
+	path = lib/BoostModules/BoostVariant2
+	url = https://github.com/boostorg/variant2.git
+[submodule "lib/BoostModules/BoostVariant"]
+	path = lib/BoostModules/BoostVariant
+	url = https://github.com/boostorg/variant.git
+[submodule "lib/BoostModules/BoostTypeIndex"]
+	path = lib/BoostModules/BoostTypeIndex
+	url = https://github.com/boostorg/type_index.git
+[submodule "lib/BoostModules/BoostAlgorithm"]
+	path = lib/BoostModules/BoostAlgorithm
+	url = https://github.com/boostorg/algorithm.git
+[submodule "lib/BoostModules/BoostArray"]
+	path = lib/BoostModules/BoostArray
+	url = https://github.com/boostorg/array.git
+[submodule "lib/BoostModules/BoostAssert"]
+	path = lib/BoostModules/BoostAssert
+	url = https://github.com/boostorg/assert.git
+[submodule "lib/BoostModules/BoostBind"]
+	path = lib/BoostModules/BoostBind
+	url = https://github.com/boostorg/bind.git
+[submodule "lib/BoostModules/BoostConfig"]
+	path = lib/BoostModules/BoostConfig
+	url = https://github.com/boostorg/config.git
+[submodule "lib/BoostModules/BoostCore"]
+	path = lib/BoostModules/BoostCore
+	url = https://github.com/boostorg/core.git
+[submodule "lib/BoostModules/BoostDateTime"]
+	path = lib/BoostModules/BoostDateTime
+	url = https://github.com/boostorg/date_time.git
+[submodule "lib/BoostModules/BoostEndian"]
+	path = lib/BoostModules/BoostEndian
+	url = https://github.com/boostorg/endian.git
+[submodule "lib/BoostModules/BoostException"]
+	path = lib/BoostModules/BoostException
+	url = https://github.com/boostorg/exception.git
+[submodule "lib/BoostModules/BoostFunction"]
+	path = lib/BoostModules/BoostFunction
+	url = https://github.com/boostorg/function.git
+[submodule "lib/BoostModules/BoostFunctionTypes"]
+	path = lib/BoostModules/BoostFunctionTypes
+	url = https://github.com/boostorg/function_types.git
+[submodule "lib/BoostModules/BoostFusion"]
+	path = lib/BoostModules/BoostFusion
+	url = https://github.com/boostorg/fusion.git
+[submodule "lib/BoostModules/BoostPreprocessor"]
+	path = lib/BoostModules/BoostPreprocessor
+	url = https://github.com/boostorg/preprocessor.git
+[submodule "lib/BoostModules/BoostSmartPtr"]
+	path = lib/BoostModules/BoostSmartPtr
+	url = https://github.com/boostorg/smart_ptr.git
+[submodule "lib/BoostModules/BoostSpirit"]
+	path = lib/BoostModules/BoostSpirit
+	url = https://github.com/boostorg/spirit.git
+[submodule "lib/BoostModules/BoostStaticAssert"]
+	path = lib/BoostModules/BoostStaticAssert
+	url = https://github.com/boostorg/static_assert.git
+[submodule "lib/BoostModules/BoostThrowException"]
+	path = lib/BoostModules/BoostThrowException
+	url = https://github.com/boostorg/throw_exception.git
