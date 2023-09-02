@@ -1,37 +1,54 @@
 #!/bin/bash
 
-# Check if --manager argument is provided
-if [[ "$1" != "--manager" || -z "$2" ]]; then
+function display_help() {
     echo "Usage: $0 --manager {apt|yum|zypper}"
+    echo
+    echo "Options:"
+    echo "  --manager   Set the package manager to use. Must be one of {apt, yum, zypper}"
+    echo "  --help      Display this help message."
+}
+
+if [[ "$1" == "--help" ]]; then
+    display_help
+    exit 0
+fi
+
+if [[ "$1" != "--manager" || -z "$2" ]]; then
+    echo "Missing or incorrect parameters."
+    display_help
     exit 1
 fi
 
-# Select the package manager
 manager="$2"
 
-# Execute corresponding commands based on the chosen package manager
 case $manager in
     apt)
         echo "Using APT package manager."
-        sudo apt-get update
-        sudo apt-get install build-essential libgl1-mesa-dev
-	sudo apt install qt6-base-dev
-        sudo apt install libspdlog-dev
-	;;
+        sudo apt-get -y update
+        sudo apt-get -y install build-essential libgl1-mesa-dev
+        sudo apt-get -y install qt6-base-dev
+        sudo apt-get -y install libspdlog-dev
+        sudo apt-get -y install gdb
+        sudo apt-get -y install cmake
+        ;;
 
     yum)
         echo "Using YUM package manager."
-        sudo yum groupinstall "C Development Tools and Libraries"
-        sudo yum install mesa-libGL-devel
-	yum install spdlog
+        sudo yum -y groupinstall "C Development Tools and Libraries"
+        sudo yum -y install mesa-libGL-devel
+        sudo yum -y install spdlog
+        sudo yum -y install gdb
+        sudo yum -y install cmake
         ;;
 
     zypper)
         echo "Using Zypper package manager."
-        sudo zypper refresh
-        sudo zypper install -t pattern devel_basis
-        sudo zypper in spdlog-devel
-	;;
+        sudo zypper -n refresh
+        sudo zypper -n install -t pattern devel_basis
+        sudo zypper -n in spdlog-devel
+        sudo zypper -n in gdb
+        sudo zypper -n in cmake
+        ;;
 
     *)
         echo "Unknown package manager: $manager"
@@ -39,6 +56,4 @@ case $manager in
         ;;
 esac
 
-# Exit the script
 exit 0
-
