@@ -3,9 +3,7 @@ import json
 import subprocess
 import os
 import shutil
-import platform
 import stat
-from configparser import ConfigParser
 
 libPath='lib/{}'
 externalPath='external/{}'
@@ -27,7 +25,8 @@ def processBuildNotHeaderOnly(dependencyDetails,dependencyCatalog):
     repoLinks = dependencyDetails["repository"]
     libInstallPath = libPath.format(dependencyCatalog)
     if os.path.isdir(libInstallPath):
-        exit(1)
+        print(f"{dependencyCatalog} already installed. skipped.")
+        return
 
     os.mkdir(libInstallPath)
 
@@ -69,7 +68,6 @@ def removeFromCatalog(directory_path):
                 os.chmod(file, stat.S_IWUSR)
                 os.remove(file)
         for name in dirs:
-            print(f"Deleting from {name}")
             shutil.rmtree(os.path.join(root, name))
 
 
@@ -152,7 +150,7 @@ def main(args):
 
 def parseInputFlags():
     parser = argparse.ArgumentParser(
-        description="Download, build and install all project needed libraries specified in dependencies.json file. Without any flags provided script would only build currently tracked liblaries. To add, modify or remove a dependency. Modify json file and run this script with --update flag.")
+        description="Download, build and install all project needed libraries specified in dependencies.json file. Without any flags provided script would only build currently tracked liblaries. To add, modify or remove a dependency modify json file and run this script with --update flag.")
 
     parser.add_argument("--force-rebuild", action="store_true",
                         help="Force rebuild all tracked libraries even if they are built in the current project")
