@@ -1,0 +1,86 @@
+{
+  "dependencies": {
+    "Qt6": {
+      "repository": {
+        "qtbase": "https://github.com/qt/qtbase.git",
+        "qtshadertools": "https://github.com/qt/qtshadertools.git",
+        "qtnetworkauth": "https://github.com/qt/qtnetworkauth.git",
+        "qtdeclarative": "https://github.com/qt/qtdeclarative.git"
+      },
+      "branch": "6.3",
+      "isHeaderOnly": false,
+      "cmakeCustomParams": {}
+    },
+    "googletest": {
+      "repository": "https://github.com/google/googletest.git",
+      "branch": "v1.14.x",
+      "isHeaderOnly": true
+    },
+    "spdlog": {
+      "repository": "https://github.com/gabime/spdlog.git",
+      "branch": "v2.x",
+      "isHeaderOnly": true
+    },
+    "boostModules": {
+      "repository": {
+        "BoostAlgorithm": "https://github.com/boostorg/algorithm.git",
+        "BoostArray": "https://github.com/boostorg/array.git",
+        "BoostAssert": "https://github.com/boostorg/assert.git",
+        "BoostAlign": "https://github.com/boostorg/align.git",
+        "BoostMove": "https://github.com/boostorg/move.git",
+        "BoostIo": "https://github.com/boostorg/io.git",
+        "BoostConceptCheck": "https://github.com/boostorg/concept_check.git",
+        "BoostTypeTraits": "https://github.com/boostorg/type_traits.git",
+        "BoostTuple": "https://github.com/boostorg/tuple.git",
+        "BoostLexicalCast": "https://github.com/boostorg/lexical_cast.git",
+        "BoostTypeof": "https://github.com/boostorg/typeof.git",
+        "BoostIterator": "https://github.com/boostorg/iterator.git",
+        "BoostNumericConversion": "https://github.com/boostorg/numeric_conversion.git",
+        "BoostContainer": "https://github.com/boostorg/container.git",
+        "BoostInteger": "https://github.com/boostorg/integer.git",
+        "BoostRange": "https://github.com/boostorg/range.git",
+        "BoostDetail": "https://github.com/boostorg/detail.git",
+        "BoostMpl": "https://github.com/boostorg/mpl.git",
+        "BoostContainerHash": "https://github.com/boostorg/container_hash.git",
+        "BoostRegex": "https://github.com/boostorg/regex.git",
+        "BoostUtility": "https://github.com/boostorg/utility.git",
+        "BoostTokenizer": "https://github.com/boostorg/tokenizer.git",
+        "BoostOptional": "https://github.com/boostorg/optional.git",
+        "BoostPredef": "https://github.com/boostorg/predef.git",
+        "BoostDescribe": "https://github.com/boostorg/describe.git",
+        "BoostWinapi": "https://github.com/boostorg/winapi.git",
+        "BoostFunctional": "https://github.com/boostorg/functional.git",
+        "BoostUnordered": "https://github.com/boostorg/unordered.git",
+        "BoostMp11": "https://github.com/boostorg/mp11.git",
+        "BoostPhoenix": "https://github.com/boostorg/phoenix.git",
+        "BoostProto": "https://github.com/boostorg/proto.git",
+        "BoostPool": "https://github.com/boostorg/pool.git",
+        "BoostThread": "https://github.com/boostorg/thread.git",
+        "BoostAtomic": "https://github.com/boostorg/atomic.git",
+        "BoostAlign": "https://github.com/boostorg/align.git",
+        "BoostChrono": "https://github.com/boostorg/chrono.git",
+        "BoostRatio": "https://github.com/boostorg/ratio.git",
+        "BoostSystem": "https://github.com/boostorg/system.git",
+        "BoostVariant2": "https://github.com/boostorg/variant2.git",
+        "BoostVariant": "https://github.com/boostorg/variant.git",
+        "BoostTypeIndex": "https://github.com/boostorg/type_index.git",
+        "BoostBind": "https://github.com/boostorg/bind.git",
+        "BoostConfig": "https://github.com/boostorg/config.git",
+        "BoostCore": "https://github.com/boostorg/core.git",
+        "BoostDateTime": "https://github.com/boostorg/date_time.git",
+        "BoostEndian": "https://github.com/boostorg/endian.git",
+        "BoostException": "https://github.com/boostorg/exception.git",
+        "BoostFunction": "https://github.com/boostorg/function.git",
+        "BoostFunctionTypes": "https://github.com/boostorg/function_types.git",
+        "BoostFusion": "https://github.com/boostorg/fusion.git",
+        "BoostPreprocessor": "https://github.com/boostorg/preprocessor.git",
+        "BoostSmartPtr": "https://github.com/boostorg/smart_ptr.git",
+        "BoostSpirit": "https://github.com/boostorg/spirit.git",
+        "BoostStaticAssert": "https://github.com/boostorg/static_assert.git",
+        "BoostThrowException": "https://github.com/boostorg/throw_exception.git"
+      },
+      "branch": "master",
+      "isHeaderOnly": true
+    }
+  }
+}

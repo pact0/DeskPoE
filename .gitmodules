@@ -1,0 +1,240 @@
+[submodule "external/qtbase"]
+	path = external/qtbase
+	url = https://github.com/qt/qtbase.git
+	branch = 6.3
+[submodule "external/qtshadertools"]
+	path = external/qtshadertools
+	url = https://github.com/qt/qtshadertools.git
+	branch = 6.3
+[submodule "external/qtnetworkauth"]
+	path = external/qtnetworkauth
+	url = https://github.com/qt/qtnetworkauth.git
+	branch = 6.3
+[submodule "external/qtdeclarative"]
+	path = external/qtdeclarative
+	url = https://github.com/qt/qtdeclarative.git
+	branch = 6.3
+[submodule "lib/googletest"]
+	path = lib/googletest
+	url = https://github.com/google/googletest.git
+	branch = v1.14.x
+[submodule "lib/spdlog"]
+	path = lib/spdlog
+	url = https://github.com/gabime/spdlog.git
+	branch = v2.x
+[submodule "lib/boostModules/BoostAlgorithm"]
+	path = lib/boostModules/BoostAlgorithm
+	url = https://github.com/boostorg/algorithm.git
+	branch = master
+[submodule "lib/boostModules/BoostArray"]
+	path = lib/boostModules/BoostArray
+	url = https://github.com/boostorg/array.git
+	branch = master
+[submodule "lib/boostModules/BoostAssert"]
+	path = lib/boostModules/BoostAssert
+	url = https://github.com/boostorg/assert.git
+	branch = master
+[submodule "lib/boostModules/BoostAlign"]
+	path = lib/boostModules/BoostAlign
+	url = https://github.com/boostorg/align.git
+	branch = master
+[submodule "lib/boostModules/BoostMove"]
+	path = lib/boostModules/BoostMove
+	url = https://github.com/boostorg/move.git
+	branch = master
+[submodule "lib/boostModules/BoostIo"]
+	path = lib/boostModules/BoostIo
+	url = https://github.com/boostorg/io.git
+	branch = master
+[submodule "lib/boostModules/BoostConceptCheck"]
+	path = lib/boostModules/BoostConceptCheck
+	url = https://github.com/boostorg/concept_check.git
+	branch = master
+[submodule "lib/boostModules/BoostTypeTraits"]
+	path = lib/boostModules/BoostTypeTraits
+	url = https://github.com/boostorg/type_traits.git
+	branch = master
+[submodule "lib/boostModules/BoostTuple"]
+	path = lib/boostModules/BoostTuple
+	url = https://github.com/boostorg/tuple.git
+	branch = master
+[submodule "lib/boostModules/BoostLexicalCast"]
+	path = lib/boostModules/BoostLexicalCast
+	url = https://github.com/boostorg/lexical_cast.git
+	branch = master
+[submodule "lib/boostModules/BoostTypeof"]
+	path = lib/boostModules/BoostTypeof
+	url = https://github.com/boostorg/typeof.git
+	branch = master
+[submodule "lib/boostModules/BoostIterator"]
+	path = lib/boostModules/BoostIterator
+	url = https://github.com/boostorg/iterator.git
+	branch = master
+[submodule "lib/boostModules/BoostNumericConversion"]
+	path = lib/boostModules/BoostNumericConversion
+	url = https://github.com/boostorg/numeric_conversion.git
+	branch = master
+[submodule "lib/boostModules/BoostContainer"]
+	path = lib/boostModules/BoostContainer
+	url = https://github.com/boostorg/container.git
+	branch = master
+[submodule "lib/boostModules/BoostInteger"]
+	path = lib/boostModules/BoostInteger
+	url = https://github.com/boostorg/integer.git
+	branch = master
+[submodule "lib/boostModules/BoostRange"]
+	path = lib/boostModules/BoostRange
+	url = https://github.com/boostorg/range.git
+	branch = master
+[submodule "lib/boostModules/BoostDetail"]
+	path = lib/boostModules/BoostDetail
+	url = https://github.com/boostorg/detail.git
+	branch = master
+[submodule "lib/boostModules/BoostMpl"]
+	path = lib/boostModules/BoostMpl
+	url = https://github.com/boostorg/mpl.git
+	branch = master
+[submodule "lib/boostModules/BoostContainerHash"]
+	path = lib/boostModules/BoostContainerHash
+	url = https://github.com/boostorg/container_hash.git
+	branch = master
+[submodule "lib/boostModules/BoostRegex"]
+	path = lib/boostModules/BoostRegex
+	url = https://github.com/boostorg/regex.git
+	branch = master
+[submodule "lib/boostModules/BoostUtility"]
+	path = lib/boostModules/BoostUtility
+	url = https://github.com/boostorg/utility.git
+	branch = master
+[submodule "lib/boostModules/BoostTokenizer"]
+	path = lib/boostModules/BoostTokenizer
+	url = https://github.com/boostorg/tokenizer.git
+	branch = master
+[submodule "lib/boostModules/BoostOptional"]
+	path = lib/boostModules/BoostOptional
+	url = https://github.com/boostorg/optional.git
+	branch = master
+[submodule "lib/boostModules/BoostPredef"]
+	path = lib/boostModules/BoostPredef
+	url = https://github.com/boostorg/predef.git
+	branch = master
+[submodule "lib/boostModules/BoostDescribe"]
+	path = lib/boostModules/BoostDescribe
+	url = https://github.com/boostorg/describe.git
+	branch = master
+[submodule "lib/boostModules/BoostWinapi"]
+	path = lib/boostModules/BoostWinapi
+	url = https://github.com/boostorg/winapi.git
+	branch = master
+[submodule "lib/boostModules/BoostFunctional"]
+	path = lib/boostModules/BoostFunctional
+	url = https://github.com/boostorg/functional.git
+	branch = master
+[submodule "lib/boostModules/BoostUnordered"]
+	path = lib/boostModules/BoostUnordered
+	url = https://github.com/boostorg/unordered.git
+	branch = master
+[submodule "lib/boostModules/BoostMp11"]
+	path = lib/boostModules/BoostMp11
+	url = https://github.com/boostorg/mp11.git
+	branch = master
+[submodule "lib/boostModules/BoostPhoenix"]
+	path = lib/boostModules/BoostPhoenix
+	url = https://github.com/boostorg/phoenix.git
+	branch = master
+[submodule "lib/boostModules/BoostProto"]
+	path = lib/boostModules/BoostProto
+	url = https://github.com/boostorg/proto.git
+	branch = master
+[submodule "lib/boostModules/BoostPool"]
+	path = lib/boostModules/BoostPool
+	url = https://github.com/boostorg/pool.git
+	branch = master
+[submodule "lib/boostModules/BoostThread"]
+	path = lib/boostModules/BoostThread
+	url = https://github.com/boostorg/thread.git
+	branch = master
+[submodule "lib/boostModules/BoostAtomic"]
+	path = lib/boostModules/BoostAtomic
+	url = https://github.com/boostorg/atomic.git
+	branch = master
+[submodule "lib/boostModules/BoostChrono"]
+	path = lib/boostModules/BoostChrono
+	url = https://github.com/boostorg/chrono.git
+	branch = master
+[submodule "lib/boostModules/BoostRatio"]
+	path = lib/boostModules/BoostRatio
+	url = https://github.com/boostorg/ratio.git
+	branch = master
+[submodule "lib/boostModules/BoostSystem"]
+	path = lib/boostModules/BoostSystem
+	url = https://github.com/boostorg/system.git
+	branch = master
+[submodule "lib/boostModules/BoostVariant2"]
+	path = lib/boostModules/BoostVariant2
+	url = https://github.com/boostorg/variant2.git
+	branch = master
+[submodule "lib/boostModules/BoostVariant"]
+	path = lib/boostModules/BoostVariant
+	url = https://github.com/boostorg/variant.git
+	branch = master
+[submodule "lib/boostModules/BoostTypeIndex"]
+	path = lib/boostModules/BoostTypeIndex
+	url = https://github.com/boostorg/type_index.git
+	branch = master
+[submodule "lib/boostModules/BoostBind"]
+	path = lib/boostModules/BoostBind
+	url = https://github.com/boostorg/bind.git
+	branch = master
+[submodule "lib/boostModules/BoostConfig"]
+	path = lib/boostModules/BoostConfig
+	url = https://github.com/boostorg/config.git
+	branch = master
+[submodule "lib/boostModules/BoostCore"]
+	path = lib/boostModules/BoostCore
+	url = https://github.com/boostorg/core.git
+	branch = master
+[submodule "lib/boostModules/BoostDateTime"]
+	path = lib/boostModules/BoostDateTime
+	url = https://github.com/boostorg/date_time.git
+	branch = master
+[submodule "lib/boostModules/BoostEndian"]
+	path = lib/boostModules/BoostEndian
+	url = https://github.com/boostorg/endian.git
+	branch = master
+[submodule "lib/boostModules/BoostException"]
+	path = lib/boostModules/BoostException
+	url = https://github.com/boostorg/exception.git
+	branch = master
+[submodule "lib/boostModules/BoostFunction"]
+	path = lib/boostModules/BoostFunction
+	url = https://github.com/boostorg/function.git
+	branch = master
+[submodule "lib/boostModules/BoostFunctionTypes"]
+	path = lib/boostModules/BoostFunctionTypes
+	url = https://github.com/boostorg/function_types.git
+	branch = master
+[submodule "lib/boostModules/BoostFusion"]
+	path = lib/boostModules/BoostFusion
+	url = https://github.com/boostorg/fusion.git
+	branch = master
+[submodule "lib/boostModules/BoostPreprocessor"]
+	path = lib/boostModules/BoostPreprocessor
+	url = https://github.com/boostorg/preprocessor.git
+	branch = master
+[submodule "lib/boostModules/BoostSmartPtr"]
+	path = lib/boostModules/BoostSmartPtr
+	url = https://github.com/boostorg/smart_ptr.git
+	branch = master
+[submodule "lib/boostModules/BoostSpirit"]
+	path = lib/boostModules/BoostSpirit
+	url = https://github.com/boostorg/spirit.git
+	branch = master
+[submodule "lib/boostModules/BoostStaticAssert"]
+	path = lib/boostModules/BoostStaticAssert
+	url = https://github.com/boostorg/static_assert.git
+	branch = master
+[submodule "lib/boostModules/BoostThrowException"]
+	path = lib/boostModules/BoostThrowException
+	url = https://github.com/boostorg/throw_exception.git
+	branch = master
