@@ -1,0 +1,39 @@
+repos:
+# -   repo: https://github.com/pocc/pre-commit-hooks
+#     rev: v1.3.5
+#     hooks:
+#     -   id: clang-format
+#     -   id: clang-tidy
+#     -   id: oclint
+#     -   id: uncrustify
+#     -   id: cppcheck
+#     -   id: cpplint
+#     -   id: include-what-you-use
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0  # this is optional, use `pre-commit autoupdate` to get the latest rev!
+    hooks:
+    - id: check-json
+      name: Check JSON files
+
+    - id: check-yaml
+      name: Check YAML files
+
+    - id: fix-byte-order-marker
+      name: Check file encoding (UTF-8 without BOM)
+
+
+    - id: mixed-line-ending
+      name: Check line ending character (LF)
+      args: ["--fix=lf"]
+
+
+    - id: end-of-file-fixer
+      name: Check trailing newlines
+      exclude_types:
+        - svg
+        - ts
+
+    - id: trailing-whitespace
+      name: Check trailing whitespaces
+      exclude_types:
+        - ts

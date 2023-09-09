@@ -1,0 +1,308 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "common-base",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/install/${presetName}"
+        },
+        {
+            "name": "linux-base",
+            "hidden": true,
+            "inherits": "common-base",
+            "generator": "Unix Makefiles",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            },
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++"
+            }
+        },
+        {
+            "name": "linux-x64-debug",
+            "inherits": "linux-base",
+            "displayName": "x64 Debug",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "linux-x64-release",
+            "inherits": "linux-base",
+            "displayName": "x64 Release",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "windows-base",
+            "hidden": true,
+            "inherits": "common-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            },
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++"
+            }
+        },
+        {
+            "name": "windows-x64-debug",
+            "inherits": "windows-base",
+            "displayName": "x64 Debug",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "windows-x86-debug",
+            "inherits": "windows-base",
+            "displayName": "x86 Debug",
+            "architecture": {
+                "value": "x86",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "windows-x64-release",
+            "inherits": "windows-base",
+            "displayName": "x64 Release",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "windows-x86-release",
+            "inherits": "windows-base",
+            "displayName": "x86 Release",
+            "architecture": {
+                "value": "x86",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "macos-base",
+            "hidden": true,
+            "inherits": "common-base",
+            "generator": "Unix Makefiles",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++"
+            }
+        },
+        {
+            "name": "macos-x64-debug",
+            "inherits": "macos-base",
+            "displayName": "x64 Debug",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "SANITIZE": false
+            }
+        },
+        {
+            "name": "macos-x64-release",
+            "inherits": "macos-base",
+            "displayName": "x64 Release",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "SANITIZE": false
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "common-base",
+            "hidden": true,
+            "jobs": 1,
+            "cleanFirst": false
+        },
+        {
+            "name": "linux-base",
+            "inherits": "common-base",
+            "hidden": true
+        },
+        {
+            "name": "windows-base",
+            "inherits": "common-base",
+            "hidden": true
+        },
+        {
+            "name": "macos-base",
+            "inherits": "common-base",
+            "hidden": true
+        },
+        {
+            "name": "linux-x64-debug",
+            "inherits": "linux-base",
+            "displayName": "x64 Debug",
+            "configurePreset": "linux-x64-debug"
+        },
+        {
+            "name": "linux-x64-release",
+            "inherits": "linux-base",
+            "displayName": "x64 Release",
+            "configurePreset": "linux-x64-release"
+        },
+        {
+            "name": "windows-x64-debug",
+            "inherits": "windows-base",
+            "displayName": "x64 Debug",
+            "configurePreset": "windows-x64-debug"
+        },
+        {
+            "name": "windows-x86-debug",
+            "inherits": "windows-base",
+            "displayName": "x86 Debug",
+            "configurePreset": "windows-x86-debug"
+        },
+        {
+            "name": "windows-x64-release",
+            "inherits": "windows-base",
+            "displayName": "x64 Release",
+            "configurePreset": "windows-x64-release"
+        },
+        {
+            "name": "windows-x86-release",
+            "inherits": "windows-base",
+            "displayName": "x86 Release",
+            "configurePreset": "windows-x86-release"
+        },
+        {
+            "name": "macos-x64-debug",
+            "inherits": "macos-base",
+            "displayName": "x64 Debug",
+            "configurePreset": "macos-x64-debug"
+        },
+        {
+            "name": "macos-x64-release",
+            "inherits": "macos-base",
+            "displayName": "x64 Release",
+            "configurePreset": "macos-x64-release"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "common-base",
+            "description": "Basic shared test settings",
+            "hidden": true,
+            "execution": {
+                "noTestsAction": "error",
+                "stopOnFailure": false
+            },
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "linux-base",
+            "inherits": "common-base",
+            "hidden": true
+        },
+        {
+            "name": "windows-base",
+            "inherits": "common-base",
+            "hidden": true
+        },
+        {
+            "name": "macos-base",
+            "inherits": "common-base",
+            "hidden": true
+        },
+        {
+            "name": "linux-x64-debug",
+            "inherits": "linux-base",
+            "displayName": "x64 Debug",
+            "configurePreset": "linux-x64-debug"
+        },
+        {
+            "name": "linux-x64-release",
+            "inherits": "linux-base",
+            "displayName": "x64 Release",
+            "configurePreset": "linux-x64-release"
+        },
+        {
+            "name": "windows-x64-debug",
+            "inherits": "windows-base",
+            "displayName": "x64 Debug",
+            "configurePreset": "windows-x64-debug"
+        },
+        {
+            "name": "windows-x86-debug",
+            "inherits": "windows-base",
+            "displayName": "x86 Debug",
+            "configurePreset": "windows-x86-debug"
+        },
+        {
+            "name": "windows-x64-release",
+            "inherits": "windows-base",
+            "displayName": "x64 Release",
+            "configurePreset": "windows-x64-release"
+        },
+        {
+            "name": "windows-x86-release",
+            "inherits": "windows-base",
+            "displayName": "x86 Release",
+            "configurePreset": "windows-x86-release"
+        },
+        {
+            "name": "macos-x64-debug",
+            "inherits": "macos-base",
+            "displayName": "x64 Debug",
+            "configurePreset": "macos-x64-debug"
+        },
+        {
+            "name": "macos-x64-release",
+            "inherits": "macos-base",
+            "displayName": "x64 Release",
+            "configurePreset": "macos-x64-release"
+        }
+    ]
+}

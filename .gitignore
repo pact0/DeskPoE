@@ -41,7 +41,7 @@
 **/compile_commands.json
 
 
-## Local 
+## Local
 
 .idea/*
 .idea/**/*
@@ -52,6 +52,8 @@
 /lib/*
 /lib/Qt6/*
 **/bin/**/*
+**/external/**/*
+/external/*
 
 ## Do not ignore
 
