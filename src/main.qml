@@ -8,6 +8,10 @@ ApplicationWindow {
     visible: true
     width: 640
 
+    visibility: Window.Windowed
+
+
+
     menuBar: MenuBar {
         Menu {
             title: qsTr("File")
@@ -22,11 +26,27 @@ ApplicationWindow {
 
                 onTriggered: Qt.quit()
             }
+
+            MenuItem {
+                text: qsTr(settings.value("test", "ayyayaya"))
+
+                onTriggered: settings.setValue("1","test")
+            }
         }
     }
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
+        text: qsTr("Hello World")
+
+        onClicked:{
+                console.log("Open action triggered")
+        }
+    }
+
+        Button {
+        anchors.horizontalCenter: parent.horizontalTop
         anchors.verticalCenter: parent.verticalCenter
         text: qsTr("Hello World")
     }
