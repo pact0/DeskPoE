@@ -1,33 +1,23 @@
 import QtQuick
 import QtQuick.Controls
+import com.example
+import QtQml
 
 ApplicationWindow {
-    height: 480
+    property int windowCounter: 0
 
-    title: qsTr("Hello World")
+    height: 480
     visible: true
     width: 640
 
-    menuBar: MenuBar {
-        Menu {
-            title: qsTr("File")
+    Button {
+        anchors.centerIn: parent
+        text: "Create Window"
 
-            MenuItem {
-                text: qsTr("&Open")
-
-                onTriggered: console.log("Open action triggered")
-            }
-            MenuItem {
-                text: qsTr("Exit")
-
-                onTriggered: Qt.quit()
-            }
+        onClicked: {
+            windowBuilder.createWindow(panel,globalContext, engine, "Window " + windowCounter, "Local Context Data for Window " + windowCounter);
+            windowCounter++;
         }
     }
 
-    Button {
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
-        text: qsTr("Hello World")
-    }
 }

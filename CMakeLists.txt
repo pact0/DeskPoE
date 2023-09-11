@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 project(DeskPoe)
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 message(${CMAKE_SYSTEM_NAME})
@@ -48,5 +49,11 @@ add_subdirectory(${INSTALL_LIB_DIR}/googletest)
 #endforeach()
 
 
+
 add_subdirectory(src)
+
+
+
 add_subdirectory(test)
+
+
